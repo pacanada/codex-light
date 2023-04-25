@@ -81,3 +81,4 @@ almost AGI ah?
 ## TODO:
 
   - Log training with `wandb` 
+  - Use more advance tokenizer (right now is on character level)
