@@ -77,6 +77,7 @@ if is_main_eximpleate():
 
     return st(syprippe
 ```
+almost AGI ah?
 ## TODO:
 
-  - Log training with wandb 
+  - Log training with `wandb` 
