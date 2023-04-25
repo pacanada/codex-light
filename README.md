@@ -24,7 +24,7 @@ Run the tiny version (256 kB) with
 python inference_v1.py 
 ```
 ```
-Model has been loaded from True
+Model has been loaded from weights/v1.pt
 INPUT
 ------------------
 
@@ -52,7 +52,7 @@ python inference_v1_kaggle.py
 ```
 
 ```
-Model has been loaded from True
+Model has been loaded from weights/v1_kaggle.pt
 INPUT
 ------------------
 
