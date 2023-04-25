@@ -1,6 +1,8 @@
 # codex-light
 
-Project to explore how to recreate a (super) light version of codex, only for python programming language
+Project to explore how to recreate a (super) light version of codex, only for python programming language. 
+
+WIP
 
 ## Quickstart
 
@@ -10,7 +12,41 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
-Run a 6MB transformer:
+
+## Training and inference
+
+Train a model with (change as you wish the default configuration of the transformer):
+```
+python train.py
+```
+Run the tiny version (256 kB) with
+```
+python inference_v1.py 
+```
+```
+Model has been loaded from True
+INPUT
+------------------
+
+            "Input values must 
+
+GENERATED
+------------------
+=* soul
+   ""
+    febttw fllestp(secthirnct rate is (matep[0] * larst = [1] 4, 0:, "Slinvat(_cu, "+ stageme:
+     nreter: Checort ice rod weypals:
+         of nod mi Aremny)
+
+
+
+pr  imal the fountor preicke imn of ABo vetysfpacorn oul blis itestd clitr ecilopt
+    Lof inverurl_alstiate te meclution p
+```
+
+## Bigger model
+
+Run a 6MB transformer (trained on kaggle notebooks using `notebooks/train_kaggle.ipynb` on GPU):
 ```cmd
 python inference_v1_kaggle.py 
 ```
@@ -41,27 +77,6 @@ if is_main_eximpleate():
 
     return st(syprippe
 ```
-Run a even lighter version (256 kB) with
-```
-python inference_v1.py 
-```
-```
-Model has been loaded from True
-INPUT
-------------------
+## TODO:
 
-            "Input values must 
-
-GENERATED
-------------------
-=* soul
-   ""
-    febttw fllestp(secthirnct rate is (matep[0] * larst = [1] 4, 0:, "Slinvat(_cu, "+ stageme:
-     nreter: Checort ice rod weypals:
-         of nod mi Aremny)
-
-
-
-pr  imal the fountor preicke imn of ABo vetysfpacorn oul blis itestd clitr ecilopt
-    Lof inverurl_alstiate te meclution p
-```
+  - Log training with wandb 
